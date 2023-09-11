@@ -1,46 +1,52 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Comment extends Model {}
 
-Project.init(
+Comment.init(
   {
+    // Comment id
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
     },
-    name: {
+    // Comment text
+    comment_text: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        // Comment must be at least one character long
+        len: [1]
+      }
     },
-    description: {
-      type: DataTypes.STRING,
-    },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },
-    needed_funding: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
-    },
+    // User id
     user_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
+        // References the User model's id
         model: 'user',
-        key: 'id',
-      },
+        key: 'id'
+      }
     },
+    // Post id
+    post_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        // References the Post model's id
+        model: 'post',
+        key: 'id'
+      }
+    }
   },
   {
     sequelize,
-    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'comment'
   }
 );
 
