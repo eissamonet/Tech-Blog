@@ -1,6 +1,14 @@
 :root {
-    --primaary:#ccdad1;
+    --primary:#ccdad1;
     --light-dark:#6f6866;
     --dark: #38302e;
     --border-radius: 0.5rem;
+}
+
+body, html, input, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--dark);
 }
