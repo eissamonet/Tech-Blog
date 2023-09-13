@@ -1,5 +1,5 @@
 :root {
-    --primary:#ccdad1;
+    --primary:#a9c6b3;
     --light-dark:#6f6866;
     --dark: #38302e;
     --border-radius: 0.5rem;
@@ -8,18 +8,11 @@
 body, html, input, textarea {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
     color: var(--dark);
 }
 
 .homepage {
     background-color: var(--primary);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 a:hover {
@@ -134,25 +127,9 @@ input[type="submit"] {
     color: var(--light-dark);
 }
 
-.blog-btn {
-    background-color: var(--light-dark);
-    color: var(--primary);
-    border: none;
-    border-radius: var(--border-radius);
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-}
 
 main {
     background-color: var(--primary);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 h1 {
