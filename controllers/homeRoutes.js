@@ -64,7 +64,7 @@ router.get('/login', (req, res) => {
 
 // render signup page
 router.get('/signup', (req, res) => {
-    res.render('signup');
+    res.render('signUp');
 });
 
 // render single post page
