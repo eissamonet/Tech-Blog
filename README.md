@@ -71,7 +71,11 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 - [express-session](https://www.npmjs.com/package/express-session)  
 
-- [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) 
+- [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
+
+<img width="1440" alt="Screenshot 2023-09-28 at 3 19 40 PM" src="https://github.com/eissamonet/Tech-Blog/assets/133728858/55ee4e97-66b8-4756-8c92-fae3df246de5">
+
+
 
 
 ## Usage
